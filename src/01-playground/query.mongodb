@@ -1,0 +1,8 @@
+// Indicar cuál BD se va a usar
+use("sample_training")
+
+// Consultar todos los documentos de una colección que cumplan con una condición
+db.zips.find({ state: "NY" })
+
+// Contar la cantidad de documentos de la respuesta
+db.zips.find({ state: "NY" }).count()
